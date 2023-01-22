@@ -1,9 +1,9 @@
-FROM jepthoniq/jepthon:slim-buster
+FROM rogerpq/RepthonAr:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/jepthoniq/jepthon.git /root/jepthon 
+RUN git clone https://github.com/rogerpq/RepthonAr.git /root/RepthonAr
 #working directory 
-WORKDIR /root/jepthon
+WORKDIR /root/rogerpq
 
 # Install requirements
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
@@ -13,4 +13,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 ENV PATH="/home/userbot/bin:$PATH"
 
-CMD ["python3","-m","jepthon"]
+CMD ["python3","-m","repthon"]
