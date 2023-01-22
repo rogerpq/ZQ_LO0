@@ -3,7 +3,7 @@ FROM rogerpq/RepthonAr:slim-buster
 #clonning repo 
 RUN git clone https://github.com/rogerpq/RepthonAr.git /root/RepthonAr
 #working directory 
-WORKDIR /root/rogerpq
+WORKDIR /root/repthon
 
 # Install requirements
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
