@@ -86,7 +86,7 @@ _set_bot () {
     echo "    ---بدء تنزيل بيانات ريبـــثون---   "
     echo "
     "
-    python3 -m repthon
+    python3 -m jepthon
 }
 
 _set_bot
